@@ -1,0 +1,1 @@
+{"op1f_engine":"analogbeast","adsr":[64,9600,0,9000,4000,4800,18432,23909],"fx_active":false,"fx_params":[10000,12000,8000,16000,0,0,0,0],"fx_type":"delay","knobs":[19609,3277,3932,983,21626,17367,1311,16384],"lfo_active":false,"lfo_params":[9280,32606,1296,9200,0,0,0,0],"lfo_type":"value","name":"ab_soft_pad","octave":0,"synth_version":4,"type":"dsynth"}

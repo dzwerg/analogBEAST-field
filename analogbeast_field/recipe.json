@@ -1,0 +1,125 @@
+{
+  "about": "analogBEAST-field 1.0.0: standalone synthesizer for OP-1 Field / open-field, with seven fixed two-line labels and five factory sounds.",
+  "name": "analogbeast",
+  "version": 100,
+  "interface": 1,
+  "build": "build_r6e_analogbeast",
+  "sources": [
+    "analogbeast_field/analogbeast_field.cpp",
+    "analogbeast_field/analogbeast_field_card.s"
+  ],
+  "works_with": [],
+  "serves": [],
+  "exports": [],
+  "pictures": [],
+  "card": {
+    "level": 10,
+    "frame": "abfield_frame",
+    "pick": null,
+    "pictures": false,
+    "input": "abfield_input",
+    "folders": [],
+    "asks": [
+      {
+        "kind": "engine",
+        "name": "analogbeast",
+        "stereo": false,
+        "cycles": 40000,
+        "voice_bytes": 44,
+        "voice_align": 4,
+        "render": "abfield_render",
+        "reset": null,
+        "shown": "abfield_shown",
+        "params": [
+          {
+            "name": "cutoff",
+            "low": 0,
+            "high": 127,
+            "start": 127
+          },
+          {
+            "name": "resonance",
+            "low": 0,
+            "high": 100,
+            "start": 20
+          },
+          {
+            "name": "osc1 ctrl1",
+            "low": 0,
+            "high": 100,
+            "start": 0
+          },
+          {
+            "name": "fold",
+            "low": 0,
+            "high": 100,
+            "start": 0
+          },
+          {
+            "name": "osc1 level",
+            "low": 0,
+            "high": 100,
+            "start": 80
+          },
+          {
+            "name": "osc2 level",
+            "low": 0,
+            "high": 100,
+            "start": 0
+          },
+          {
+            "name": "noise level",
+            "low": 0,
+            "high": 100,
+            "start": 0
+          },
+          {
+            "name": "osc2 semi",
+            "low": -24,
+            "high": 24,
+            "start": 0
+          }
+        ],
+        "sounds": [
+          {
+            "name": "analogbeast_init",
+            "file": "analogbeast-init.json"
+          },
+          {
+            "name": "ab_bass",
+            "file": "ab_bass.json"
+          },
+          {
+            "name": "ab_soft_pad",
+            "file": "ab_soft_pad.json"
+          },
+          {
+            "name": "ab_fold_lead",
+            "file": "ab_fold_lead.json"
+          },
+          {
+            "name": "ab_noisy_keys",
+            "file": "ab_noisy_keys.json"
+          }
+        ]
+      },
+      {
+        "kind": "keeps",
+        "name": "abfield_extra",
+        "changed": "abfield_changed",
+        "keys": [
+          {
+            "name": "abfield_extra",
+            "files": [
+              "synth"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "marks": [],
+  "named": true,
+  "sum": true,
+  "path": null
+}
